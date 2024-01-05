@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    background: hsl(210, 46%, 95%);
+}
+
+.wrapper{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1440px;
+    margin-inline: auto;
+    margin-block: 6rem;
+    position: relative;
+    justify-content: center;
+}
+
+.grid-span-2{
+    grid-column: span 2;
+}
+
+.card:last-child{
+    grid-column-start: 4;
+    grid-row: 1 / span 2;
+    
+}
+
+.card{
+    position: relative;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    box-shadow: 0 1rem 1rem -0.5rem rgb(0, 0, 0, 0.2);
+}
+
+.img{
+    margin-left: auto;
+    filter: opacity(0.5);
+}
+
+.icon{
+    width: 50px;
+    border-radius: 50%;
+}
+
+.cardname{
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+.title{
+    padding-left: 2rem;
+}
+
+.title h2{
+    font-size: 20px;
+}
+
+.title p{
+    font-size: 15px;
+    color: hsl(0, 0%, 81%);
+}
+
+.text-124{
+    color: #fff;
+}
+
+h1{
+    padding-bottom: 1rem;
+}
+
+.daniel{
+    background: hsl(263, 55%, 52%);
+}
+
+.jonathan{
+    background: hsl(217, 19%, 35%);
+}
+
+.jeanette, .kira{
+    background: #fff;
+}
+
+.patrick{
+    background: hsl(219, 29%, 14%);
+}
+
+@media (max-width:1000px){
+    .wrapper{
+        display: block;
+        margin: 1rem;
+    }
+
+    .card{
+        margin-bottom: 2rem;
+    }
+}
